@@ -69,7 +69,7 @@ class Migration(migrations.Migration):
                     auto_created=True, primary_key=True,
                     serialize=False, verbose_name='ID')),
                 ('name', models.CharField(
-                    help_text='Useful description', max_length=200,
+                    help_text='Useful description', max_length=191,
                     unique=True, verbose_name='name')),
                 ('task', models.CharField(
                     max_length=200, verbose_name='task name')),
@@ -134,7 +134,7 @@ class Migration(migrations.Migration):
                     auto_created=True, primary_key=True,
                     serialize=False, verbose_name='ID')),
                 ('task_id', models.CharField(
-                    max_length=255, unique=True,
+                    max_length=191, unique=True,
                     verbose_name='task id')),
                 ('status', models.CharField(
                     choices=[
@@ -171,7 +171,7 @@ class Migration(migrations.Migration):
                     auto_created=True, primary_key=True,
                     serialize=False, verbose_name='ID')),
                 ('taskset_id', models.CharField(
-                    max_length=255, unique=True,
+                    max_length=191, unique=True,
                     verbose_name='group id')),
                 ('result', djcelery.picklefield.PickledObjectField(
                     editable=False)),
@@ -243,7 +243,7 @@ class Migration(migrations.Migration):
                     auto_created=True, primary_key=True,
                     serialize=False, verbose_name='ID')),
                 ('hostname', models.CharField(
-                    max_length=255, unique=True, verbose_name='hostname')),
+                    max_length=191, unique=True, verbose_name='hostname')),
                 ('last_heartbeat', models.DateTimeField(
                     db_index=True, null=True, verbose_name='last heartbeat')),
             ],

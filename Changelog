@@ -5,6 +5,15 @@
 .. contents::
     :local:
 
+.. _version-3.1.17-mysql-utf8mb4:
+
+3.1.17-mysql-utf8mb4
+====================
+
+A modified version of 3.1.17 tweaked so that it can run on MySQL with the
+``utf8mb4`` encoding. Further details on the problem available at `#259
+<https://github.com/celery/django-celery/issues/259>`_.
+
 .. _version-3.1.17:
 
 3.1.17
